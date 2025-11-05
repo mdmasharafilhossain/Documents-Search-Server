@@ -4,7 +4,7 @@ const app = express()
 
 
 app.use(cors({
-    origin:['http://localhost:5173','https://docfind-client.vercel.app'],
+    origin:['http://localhost:5173','https://docfind-client.vercel.app','http://localhost:5174'],
     credentials:true
 }));
 
@@ -63,7 +63,7 @@ app.post("/generate-result",  (req, res )=>{
 
 summary += matchedData.map((data)=> `${data.title}  discusses that ${data.content.charAt(0).toLowerCase()}${data.content.slice(1)}`).join(" ");
 
-summary += ` Overall, these documents provide insights into the topic related to "${SearchQuery}".`
+summary += ` Overall, these documents provide insights into the topic related to ${SearchQuery}.`
     }else{
         summary = "No documents found for your query. Please try again with different keywords.."
     }
