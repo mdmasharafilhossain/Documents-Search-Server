@@ -40,14 +40,16 @@ The backend is designed for integration with a React-based frontend.
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/mdmasharafilhossain/Documents-Search-Server
+```
+### 2️⃣ Navigate to the Project Folder
+```bash
 cd Documents-Search-Server
 ```
-### 2️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 ```bash
 npm install
 ```
-
-### 3️⃣ Start the Development Server
+### 4️⃣ Start the Development Server
 ```bash
 npm run dev
 ```
