@@ -78,6 +78,10 @@ summary += ` Overall, these documents provide insights into the topic related to
 )
 
 
-app.listen(PORT, ()=>{
-    console.log(`Documents server running..`)
-})
+app.get('/',(req,res)=>{
+    res.send('DocFind Server Running...');
+});
+
+app.listen(PORT,()=>{
+    console.log(`DocFind Server Running at Port ${PORT}`)
+});
